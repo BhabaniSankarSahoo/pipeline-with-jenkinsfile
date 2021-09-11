@@ -1,0 +1,15 @@
+pipeline{
+    agent any
+    stages{
+        stage(" scm checkout "){
+            steps{
+                echo "========downloading code from scm========"
+            }
+        }
+        stage(" build the artifact "){
+            steps{
+                echo "====build the artifact===="
+            }
+        }
+    }
+}
