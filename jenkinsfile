@@ -3,7 +3,10 @@ pipeline{
     stages{
         stage(" scm checkout "){
             steps{
-                echo "env.BRANCH_NAME"
+                echo "printing branch name"
+                script{
+                echo $env.BRANCH_NAME
+                }
             }
         }
     }
